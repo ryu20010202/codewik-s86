@@ -10,6 +10,6 @@ class UsersController extends Controller
     public function index()
     {
         $user_name = "code wiki";
-        return view('index', compact('user_name'));
+        return view('x', compact('user_name'));
     }
 }
