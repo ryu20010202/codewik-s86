@@ -59,3 +59,26 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# データベース設計
+
+## items
+
+|  Column             | Type       | Options     |
+| ------------------- | ---------- | ----------- |
+| code                | string     | null: false |
+| how                 | string     | null: false |
+| explanation         | text       | null: false |
+| user                | references | null: false |
+
+### Association
+
+- belongs_to :user
+
+## user
+
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| email              | string | null: false |
+| encrypted_password | string | null: false |
+| name               | string | null: false |
