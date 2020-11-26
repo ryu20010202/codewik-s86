@@ -24,3 +24,21 @@ header {
   margin: 12px;
   padding: 15px 50px;
 }
+
+footer {
+  height: 80px;
+  background-color: lightgrey;
+}
+.bottom{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inquiry-bottom {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.sns-bottom {
+  font-size: 15px;
+}

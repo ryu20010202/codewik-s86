@@ -22,4 +22,16 @@
     @yield('content')
 
 </body>
+<footer>
+  <div class="bottom">
+    <div class="intermediate-bottom">
+      <div class="inquiry-bottom">
+        問合せ用メールアドレス <a href="mailto:ryu27017@gmail.com">ryu27017@gmail.com</a>
+      </div>
+      <div class="sns-bottom">
+        twitterアカウント <a href="https://twitter.com/Ryut03251161">@Ryut03251161</a>
+      </div>
+    </div>
+  </div>
+</footer>
 </html>
