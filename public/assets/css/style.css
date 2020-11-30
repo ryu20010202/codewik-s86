@@ -1,3 +1,4 @@
+/*header装飾*/
 header {
   height: 80px;
   background-color: rgb(238, 198, 123);
@@ -20,11 +21,14 @@ header {
   margin: auto;
 }
 .li-top {
-  border: solid 1px black;
   margin: 12px;
   padding: 15px 50px;
 }
+.user-link {
+  text-decoration: none;
+}
 
+/*footer装飾*/
 footer {
   height: 80px;
   background-color: lightgrey;
@@ -41,4 +45,49 @@ footer {
 }
 .sns-bottom {
   font-size: 15px;
+}
+
+/*トップページ装飾*/
+.x-main {
+  background-color: rgba(253, 209, 15, 0.692);
+  display: flex;
+}
+.list-main {
+  font-size: 15px;
+  background-color: rgb(172, 165, 165);
+  width: 20%;
+  padding: 20px 3%;
+}
+.page-main {
+  padding: 20px 10%;
+  font-size: 20px;
+}
+.manager-main {
+  display: flex;
+}
+img.manager-image{
+  height: 100%;
+  width: 25%;
+}
+.user-name {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.li-main {
+  margin-bottom: 10px;
+}
+.language-link {
+  text-decoration: none;
+}
+.main-items {
+  margin-top: 15px;
+}
+.new-items{
+  display: flex;
+}
+.new-count {
+  margin-bottom: 20px;
+}
+.new-item{
+  margin-left: 20px;
 }

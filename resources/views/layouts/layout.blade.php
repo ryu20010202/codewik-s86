@@ -12,8 +12,8 @@
       <h1>Code Wiki</h1>
     </div>
     <ul class="ul-top">
-      <li class="li-top">ログイン</li>
-      <li class="li-top">新規登録</li>
+      <li class="li-top"><a href="#" class="user-link">ログイン</a></li>
+      <li class="li-top"><a href="#" class="user-link">新規登録</a></li>
     </ul>
   </div>
 </header>
