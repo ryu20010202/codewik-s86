@@ -24,26 +24,20 @@
       </div>
       <div class="main-items">
         {{ $user_name }}
-        <div class="new-items">
-          <div class="new-count">
-            <?php
-              $count = 0;
-
-              while ($count < 10){
-                $count += 1 ;
-                print($count);
-                print("<br/>");
-              }
-            ?>
-          </div>
-          <div class="new-item">
-            <?php
-              foreach ($items as $item) {
-                print($item);
-                print("<br/>");
-              }
-            ?>
-          </div>
+        <div class = "newlist">
+          @foreach ($items as $item)
+            <div class="new-items">
+              <div class="new-count">
+                <?php
+                  $count += 1;
+                  print($count);
+                ?>
+              </div>
+              <div class="new-item">
+                {{$item}}
+              </div>
+            </div>
+          @endforeach
         </div>
       </div>
     </div>

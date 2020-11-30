@@ -82,8 +82,12 @@ img.manager-image{
 .main-items {
   margin-top: 15px;
 }
+.newlist {
+  padding-top: 20px;
+}
 .new-items{
   display: flex;
+  margin: 20px;
 }
 .new-count {
   margin-bottom: 20px;
