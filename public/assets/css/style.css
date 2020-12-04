@@ -148,7 +148,7 @@ input {
 textarea {
   box-sizing: border-box;
   width: 100%;
-  height: 200px;
+  height: 300px;
   padding: 0 10px;
   margin: 5px 0;
   font-size: 16px;
@@ -166,10 +166,42 @@ textarea {
   margin: 15px 0;
 }
 .code {
-  width: 10%;
-  margin: 0 10px;
+  width: 20%;
+  margin: 0 5px;
+  display: flex;
+}
+.code-item {
+  padding: 0 10px;
+  border: 1px black solid;
+  border-radius: 6px;
 }
 .how {
   width: 50%;
   margin: 0 10px;
+  display: flex;
+}
+.how-item {
+  margin-right: 15px;
+  padding: 0 5px;
+  background-color: aquamarine;
+  border: 1px black solid;
+  border-radius: 6px;
+}
+.explanation {
+  padding: 10px 10px;
+  border: 1px black solid;
+  border-radius: 6px;
+}
+.copy-button {
+  box-sizing: border-box;
+  width: 100px;
+  height: 25px;
+  margin: 0 15px;
+  font-size: 16px;
+  color: #333;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  outline: 0;
+  transition: 0.3s;
+  -webkit-appearance: none;
 }

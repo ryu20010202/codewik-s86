@@ -4,6 +4,10 @@
   <div class="ruby">
     <div class="ruby-form">
       投稿用フォーム
+      @foreach ($errors->all() as $error)
+        <li>{{$error}}</li>
+      @endforeach
+
       @if (Auth::check())
         <form action="/ruby" method="POST">
           @csrf
@@ -34,11 +38,15 @@
       @foreach ($items as $item)
         <div class="code-items">
           <div class="code">
-            {{$item->code}}
+            <p class="code-item" id="copyTarget">{{$item->code}}</p>
+            <input class="copy-button" type="button" id="copy" value="コピーする" onclick="onClickCopy();">
           </div>
           <div class="how">
-            {{$item->how}}
+            <p class="how-item">使用方法</p>{{$item->how}}
           </div>
+        </div>
+        <div class="explanation">
+          {{$item->explanation}}
         </div>
       @endforeach
     </div>

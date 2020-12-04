@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/reset.css') }}">
+    <script src="{{ asset('assets/js/copy.js') }}"></script>
     <title>codewiki</title>
 </head>
 <header>
