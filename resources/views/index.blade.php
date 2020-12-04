@@ -3,12 +3,12 @@
 @section('content')
   <div class="x-main">
     <div class="list-main">
-      <p class="user-name">こんにちは userさん</p>
+      <p class="user-name">こんにちは <a href="/user/profile">user</a>さん</p>
       <ul>
         <li class="li-main"><a href="#" class="language-link">HTML</a></li>
         <li class="li-main"><a href="#" class="language-link">CSS</a></li>
         <li class="li-main"><a href="#" class="language-link">JavaScript</a></li>
-        <li class="li-main"><a href="#" class="language-link">Ruby</a></li>
+        <li class="li-main"><a href="/ruby" class="language-link">Ruby</a></li>
         <li class="li-main"><a href="#" class="language-link">Ruby on Rails</a></li>
         <li class="li-main"><a href="#" class="language-link">PHP</a></li>
         <li class="li-main"><a href="#" class="language-link">laravel</a></li>
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="main-items">
-        {{ $user_name }}
+        最新投稿一覧
         <div class = "newlist">
           @foreach ($items as $item)
             <div class="new-items">

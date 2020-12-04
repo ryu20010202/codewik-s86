@@ -9,11 +9,11 @@
 <header>
   <div class="top">
     <div class="title-top">
-      <h1>Code Wiki</h1>
+      <h1><a href="/" class="main-title">Code Wiki</a></h1>
     </div>
     <ul class="ul-top">
-      <li class="li-top"><a href="#" class="user-link">ログイン</a></li>
-      <li class="li-top"><a href="#" class="user-link">新規登録</a></li>
+      <li class="li-top"><a href="/login" class="user-link">ログイン</a></li>
+      <li class="li-top"><a href="/register" class="user-link">新規登録</a></li>
     </ul>
   </div>
 </header>

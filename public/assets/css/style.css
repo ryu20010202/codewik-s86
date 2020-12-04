@@ -1,7 +1,7 @@
 /*header装飾*/
 header {
   height: 80px;
-  background-color: rgb(238, 198, 123);
+  background-color: rgb(207, 177, 120);
 }
 .top {
   height: 70px;
@@ -13,6 +13,10 @@ header {
   font-size: 40px;
   padding: 15px 100px;
   margin: auto;
+}
+.main-title {
+  color: black;
+  text-decoration: none;
 }
 .ul-top {
   font-size: 20px;
@@ -49,7 +53,7 @@ footer {
 
 /*トップページ装飾*/
 .x-main {
-  background-color: rgba(253, 209, 15, 0.692);
+  background-color: rgba(250, 244, 220, 0.692);
   display: flex;
 }
 .list-main {
@@ -95,4 +99,20 @@ img.manager-image{
 }
 .new-item{
   margin-left: 20px;
+}
+
+/*ruby用ビュー*/
+.ruby {
+  background-color: rgba(250, 244, 220, 0.692);
+  display: flex;
+}
+.ruby-form {
+  font-size: 15px;
+  background-color: rgb(172, 165, 165);
+  width: 20%;
+  padding: 20px 3%;
+}
+.ruby-list{
+  padding: 20px 10%;
+  font-size: 20px;
 }
