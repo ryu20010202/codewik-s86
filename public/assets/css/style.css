@@ -113,6 +113,63 @@ img.manager-image{
   padding: 20px 3%;
 }
 .ruby-list{
+  width: calc(100vw - 20%);
+}
+
+/*投稿用共通フォーム*/
+.ruby-list{
   padding: 20px 10%;
   font-size: 20px;
+}
+.code-form {
+  margin: 15px 5px;
+}
+.how-form {
+  margin: 15px 5px;
+}
+.explanation-form {
+  margin: 15px 5px;
+}
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  outline: 0;
+  transition: 0.3s;
+  -webkit-appearance: none;
+
+}
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 200px;
+  padding: 0 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  outline: 0;
+  transition: 0.3s;
+  -webkit-appearance: none;
+}
+
+/*共通投稿内容一覧*/
+.code-items {
+  display: flex;
+  margin: 15px 0;
+}
+.code {
+  width: 10%;
+  margin: 0 10px;
+}
+.how {
+  width: 50%;
+  margin: 0 10px;
 }

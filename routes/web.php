@@ -17,4 +17,5 @@ Route::get('/', 'App\Http\Controllers\ItemsController@index');
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
-Route::get('/ruby',  'App\Http\Controllers\ItemsController@ruby');
+Route::get('/ruby', 'App\Http\Controllers\ItemsController@ruby');
+Route::post('/ruby', 'App\Http\Controllers\ItemsController@rubyCreate');

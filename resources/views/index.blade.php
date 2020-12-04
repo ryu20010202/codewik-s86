@@ -3,7 +3,13 @@
 @section('content')
   <div class="x-main">
     <div class="list-main">
-      <p class="user-name">こんにちは <a href="/user/profile">user</a>さん</p>
+      <p class="user-name">こんにちは 
+        @if (Auth::check())
+          <a href="/user/profile">{{Auth::user()->name}}</a>さん
+        @else
+          ゲストさん
+        @endif
+      </p>
       <ul>
         <li class="li-main"><a href="#" class="language-link">HTML</a></li>
         <li class="li-main"><a href="#" class="language-link">CSS</a></li>
