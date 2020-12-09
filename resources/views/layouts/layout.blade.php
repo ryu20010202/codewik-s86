@@ -12,10 +12,17 @@
     <div class="title-top">
       <h1><a href="/" class="main-title">Code Wiki</a></h1>
     </div>
-    <ul class="ul-top">
-      <li class="li-top"><a href="/login" class="user-link">ログイン</a></li>
-      <li class="li-top"><a href="/register" class="user-link">新規登録</a></li>
-    </ul>
+    @if ( Auth::check() )
+      <ul class="ul-top">
+        <li class="li-top"><a href="/logout" class="user-link">ログアウト</a></li>
+        <li class="li-top"><a href="/user/profile" class="user-link">{{Auth::user()->name}}</a></li>
+      </ul>
+    @else
+      <ul class="ul-top">
+        <li class="li-top"><a href="/login" class="user-link">ログイン</a></li>
+        <li class="li-top"><a href="/register" class="user-link">新規登録</a></li>
+      </ul>
+    @endif
   </div>
 </header>
 <body>

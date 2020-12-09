@@ -34,19 +34,16 @@
       @endif
     </div>
     <div class="ruby-list">
-      投稿内容一覧
+      Ruby投稿内容一覧
       @foreach ($items as $item)
         <div class="code-items">
           <div class="code">
             <p class="code-item" id="copyTarget">{{$item->code}}</p>
-            <input class="copy-button" type="button" id="copy" value="コピーする" onclick="onClickCopy();">
+            <a href="/ruby/{{$item->id}}">詳細画面</a>
           </div>
           <div class="how">
             <p class="how-item">使用方法</p>{{$item->how}}
           </div>
-        </div>
-        <div class="explanation">
-          {{$item->explanation}}
         </div>
       @endforeach
     </div>

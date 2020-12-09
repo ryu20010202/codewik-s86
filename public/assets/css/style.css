@@ -4,6 +4,7 @@ header {
   background-color: rgb(207, 177, 120);
 }
 .top {
+  background-color: rgba(236, 216, 160, 0.692);
   height: 70px;
   display: flex;
   align-items: center;
@@ -163,7 +164,7 @@ textarea {
 /*共通投稿内容一覧*/
 .code-items {
   display: flex;
-  margin: 15px 0;
+  margin: 30px 0;
 }
 .code {
   width: 20%;
@@ -171,7 +172,8 @@ textarea {
   display: flex;
 }
 .code-item {
-  padding: 0 10px;
+  margin-right: 15px;
+  padding: 3px 15px;
   border: 1px black solid;
   border-radius: 6px;
 }
@@ -187,15 +189,113 @@ textarea {
   border: 1px black solid;
   border-radius: 6px;
 }
-.explanation {
-  padding: 10px 10px;
+
+/*コード詳細画面*/
+.show {
+  width: 100vw;
+  height: calc(100vh - 160px);
+  background-color: rgba(250, 244, 220, 0.692);
+  display: flex;
+}
+.show-l {
+  width: 15%;
+  height: 100%;
+  background-color: rgb(172, 165, 165);
+}
+.back-page {
+  font-size: 18px;
+  margin: 18px 18px 10px;
+}
+.back-url {
+  font-size: 18px;
+  margin: 10px 18px;
+}
+.other-title {
+  font-size: 18px;
+  margin: 35px 18px 10px;
+}
+.other-url {
+  margin: 15px 18px;
+}
+.user-edit {
+  padding: 10px 20px;
+  margin: 0 18px;
+  border: 1px black solid;
+}
+.edit-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.edit-url {
+  font-size: 18px;
+  text-decoration: none;
+}
+.show-item {
+  width: 85%;
+  height: 100%;
+}
+.code-title {
+  font-size: 23px;
+  padding: 40px 5px 5px;
+  justify-content: center;
+  display: flex;
+}
+.code-show {
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.show-code-item {
+  font-size: 20px;
+  margin: 5px 10px;
+  padding: 5px 40px;
+  border: 1px black solid;
+  border-radius: 6px;
+}
+.how-title {
+  font-size: 25px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.how-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.how-show-item {
+  font-size: 28px;
+  margin: 17px 0;
+  padding: 15px 70px;
+  border: 1px black solid;
+  border-radius: 6px;
+}
+.explanation-title {
+  font-size: 25px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explanation-show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explanation-show-item {
+  font-size: 20px;
+  width: 550px;
+  margin: 10px 0;
+  padding: 35px 60px;
   border: 1px black solid;
   border-radius: 6px;
 }
 .copy-button {
   box-sizing: border-box;
-  width: 100px;
-  height: 25px;
+  width: 150px;
+  height: 30px;
   margin: 0 15px;
   font-size: 16px;
   color: #333;
@@ -204,4 +304,116 @@ textarea {
   outline: 0;
   transition: 0.3s;
   -webkit-appearance: none;
+}
+
+/*詳細編集画面*/
+.edit {
+  background-color: rgba(250, 244, 220, 0.692);
+  width: 100vw;
+  height: calc(100vh - 160px);
+  display: flex;
+  justify-content: center;
+}
+.edit-x {
+  width: 700px;
+}
+.edit-code {
+  margin: 20px 0;
+}
+.edit-code-title {
+  font-size: 20px;
+}
+.edit-code-form {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  margin: 15px 0;
+  font-size: 16px;
+  color: #333;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  outline: 0;
+  transition: 0.3s;
+  -webkit-appearance: none;
+}
+.edit-how {
+  margin: 20px 0;
+}
+.edit-how-title {
+  font-size: 20px;
+}
+.edit-how-form {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  margin: 15px 0;
+  font-size: 16px;
+  color: #333;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  outline: 0;
+  transition: 0.3s;
+  -webkit-appearance: none;
+}
+.edit-explanation {
+  margin: 20px 0;
+}
+.edit-explanation-title {
+  font-size: 20px;
+}
+.edit-explanation-form {
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  padding: 0 10px;
+  margin: 15px 0;
+  font-size: 18px;
+  color: #333;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  outline: 0;
+  transition: 0.3s;
+  -webkit-appearance: none;
+}
+.edit-button {
+  margin: 20px 0;
+}
+.edit-button-form {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  margin: 15px 0;
+  font-size: 18px;
+  color: #333;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  outline: 0;
+  transition: 0.3s;
+  -webkit-appearance: none;
+}
+.edit-b {
+  margin: 20px 0;
+}
+.delete-button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  margin: 5px 0;
+  font-size: 18px;
+  color: #333;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  outline: 0;
+  transition: 0.3s;
+  -webkit-appearance: none;
+}
+.edit-c {
+  margin: 20px 0;
+}
+.edit-back-link {
+  font-size: 20px;
 }
