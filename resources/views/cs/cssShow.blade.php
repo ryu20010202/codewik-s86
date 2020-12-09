@@ -4,17 +4,17 @@
   <div class="show">
     <div class="show-l">
       <div class="back-page">
-        Htmlの一覧ページへは
+        CSSの一覧ページへは
       </div>
       <div>
-        <a href="/html" class="back-url">こちらからお願いします</a>
+        <a href="/cs" class="back-url">こちらからお願いします</a>
       </div>
       <div class="other-title">
         その他一覧ページ
       </div>
       <div>
         <ul class="other-url">
-          <li class="li-main"><a href="/cs" class="language-link">CSS</a></li>
+          <li class="li-main"><a href="/html" class="language-link">HTML</a></li>
           <li class="li-main"><a href="/#" class="language-link">JavaScript</a></li>
           <li class="li-main"><a href="/ruby" class="language-link">Ruby</a></li>
           <li class="li-main"><a href="/#" class="language-link">Ruby on Rails</a></li>
@@ -27,13 +27,13 @@
           <div class="edit-title">
             投稿の編集削除
           </div>
-          <a href="{{ route('htmlEdit', ['id' => $item->id]) }}" class="edit-url">編集画面</a>
+          <a href="{{ route('cssEdit', ['id' => $item->id]) }}" class="edit-url">編集画面</a>
         </div>
       @endif
     </div>
     <div class="show-item">
       <div class="code-title">
-        要素
+        メソッド, コマンド
       </div>
       <div class="code-show">
         <div class="show-code-item" id="copyTarget">

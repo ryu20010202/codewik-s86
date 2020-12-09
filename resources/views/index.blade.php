@@ -12,7 +12,7 @@
       </p>
       <ul>
         <li class="li-main"><a href="/html" class="language-link">HTML</a></li>
-        <li class="li-main"><a href="#" class="language-link">CSS</a></li>
+        <li class="li-main"><a href="/cs" class="language-link">CSS</a></li>
         <li class="li-main"><a href="#" class="language-link">JavaScript</a></li>
         <li class="li-main"><a href="/ruby" class="language-link">Ruby</a></li>
         <li class="li-main"><a href="#" class="language-link">Ruby on Rails</a></li>

@@ -31,3 +31,10 @@ Route::get('/html/{id}', 'App\Http\Controllers\HtmlsController@show')->name('htm
 Route::get('/html/{id}/edit', 'App\Http\Controllers\HtmlsController@edit')->name('htmlEdit');
 Route::post('/html/{id}', 'App\Http\Controllers\HtmlsController@update')->name('htmlUpdate');
 Route::delete('/html/{id}/destroy', 'App\Http\Controllers\HtmlsController@destroy')->name('htmlDestroy');
+
+Route::get('/cs', 'App\Http\Controllers\CssesController@css')->name('css');
+Route::post('/cs', 'App\Http\Controllers\CssesController@cssCreate');
+Route::get('/cs/{id}', 'App\Http\Controllers\CssesController@show')->name('cssShow');
+Route::get('/cs/{id}/edit', 'App\Http\Controllers\CssesController@edit')->name('cssEdit');
+Route::post('/cs/{id}', 'App\Http\Controllers\CssesController@update')->name('cssUpdate');
+Route::delete('/cs/{id}/destroy', 'App\Http\Controllers\CssesController@destroy')->name('cssDestroy');
