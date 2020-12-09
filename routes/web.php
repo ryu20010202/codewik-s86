@@ -38,3 +38,10 @@ Route::get('/cs/{id}', 'App\Http\Controllers\CssesController@show')->name('cssSh
 Route::get('/cs/{id}/edit', 'App\Http\Controllers\CssesController@edit')->name('cssEdit');
 Route::post('/cs/{id}', 'App\Http\Controllers\CssesController@update')->name('cssUpdate');
 Route::delete('/cs/{id}/destroy', 'App\Http\Controllers\CssesController@destroy')->name('cssDestroy');
+
+Route::get('/jses', 'App\Http\Controllers\JsesController@js')->name('js');
+Route::post('/jses', 'App\Http\Controllers\JsesController@jsCreate');
+Route::get('/jses/{id}', 'App\Http\Controllers\JsesController@show')->name('jsShow');
+Route::get('/jses/{id}/edit', 'App\Http\Controllers\JsesController@edit')->name('jsEdit');
+Route::post('/jses/{id}', 'App\Http\Controllers\JsesController@update')->name('jsUpdate');
+Route::delete('/jses/{id}/destroy', 'App\Http\Controllers\JsesController@destroy')->name('jsDestroy');

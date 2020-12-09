@@ -12,7 +12,7 @@
         <form action="/cs" method="POST">
           @csrf
             <div class="code-form">
-              <label>要素</label><br>
+              <label>プロパティ</label><br>
               <input type="text" name="code">
             </div>
             <div class="how-form">

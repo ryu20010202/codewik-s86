@@ -9,10 +9,10 @@
       @endforeach
 
       @if (Auth::check())
-        <form action="/ruby" method="POST">
+        <form action="/jses" method="POST">
           @csrf
             <div class="code-form">
-              <label>メソッド,コマンド</label><br>
+              <label>関数</label><br>
               <input type="text" name="code">
             </div>
             <div class="how-form">
@@ -34,15 +34,15 @@
       @endif
     </div>
     <div class="ruby-list">
-      Ruby投稿内容一覧
+      Java Script 投稿内容一覧
       @if($items == null)
-        投稿が存在しません
+        <div>投稿が存在しません</div>
       @else
         @foreach ($items as $item)
           <div class="code-items">
             <div class="code">
               <p class="code-item" id="copyTarget">{{$item->code}}</p>
-              <a href="/ruby/{{$item->id}}">詳細画面</a>
+              <a href="/jses/{{$item->id}}">詳細画面</a>
             </div>
             <div class="how">
               <p class="how-item">使用方法</p>{{$item->how}}

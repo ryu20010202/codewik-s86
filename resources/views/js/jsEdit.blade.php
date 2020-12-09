@@ -4,7 +4,7 @@
 <div class="edit">
   <div class="edit-x">
     <div class="edit-a">
-      <form action="{{ route('cssUpdate', ['id' => $item->id ]) }}" method="POST" class="edit-mein">
+      <form action="{{ route('jsUpdate', ['id' => $item->id ]) }}" method="POST" class="edit-mein">
         @csrf
         <div class="edit-code">
           <label class="edit-code-title">プロパティ</label>
@@ -24,7 +24,7 @@
       </form>
     </div>
     <div class="edit-b">
-      <form action="{{ route('cssDestroy', ['id' => $item->id ]) }}" method="POST">
+      <form action="{{ route('jsDestroy', ['id' => $item->id ]) }}" method="POST">
         @csrf
         {{ method_field('delete') }}
         <input type="submit" value="この投稿を削除する" class="delete-button">
@@ -32,7 +32,7 @@
     </div>
     <div class="edit-c">
       <div class="edit-back-link">
-        <a href="{{ route('cssShow', ['id' => $item->id]) }}">詳細画面に戻る</a>
+        <a href="{{ route('jsShow', ['id' => $item->id]) }}">詳細画面に戻る</a>
       </div>
     </div>
   </div>
