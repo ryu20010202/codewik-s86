@@ -24,3 +24,10 @@ Route::get('/ruby/{id}', 'App\Http\Controllers\ItemsController@show')->name('rub
 Route::get('/ruby/{id}/edit', 'App\Http\Controllers\ItemsController@edit')->name('rubyEdit');
 Route::post('/ruby/{id}', 'App\Http\Controllers\ItemsController@update')->name('rubyUpdate');
 Route::delete('/ruby/{id}/destroy', 'App\Http\Controllers\ItemsController@destroy')->name('rubyDestroy');
+
+Route::get('/html', 'App\Http\Controllers\HtmlsController@html')->name('html');
+Route::post('/html', 'App\Http\Controllers\HtmlsController@htmlCreate');
+Route::get('/html/{id}', 'App\Http\Controllers\HtmlsController@show')->name('htmlShow');
+Route::get('/html/{id}/edit', 'App\Http\Controllers\HtmlsController@edit')->name('htmlEdit');
+Route::post('/html/{id}', 'App\Http\Controllers\HtmlsController@update')->name('htmlUpdate');
+Route::delete('/html/{id}/destroy', 'App\Http\Controllers\HtmlsController@destroy')->name('htmlDestroy');
