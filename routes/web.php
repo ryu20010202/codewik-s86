@@ -45,3 +45,10 @@ Route::get('/jses/{id}', 'App\Http\Controllers\JsesController@show')->name('jsSh
 Route::get('/jses/{id}/edit', 'App\Http\Controllers\JsesController@edit')->name('jsEdit');
 Route::post('/jses/{id}', 'App\Http\Controllers\JsesController@update')->name('jsUpdate');
 Route::delete('/jses/{id}/destroy', 'App\Http\Controllers\JsesController@destroy')->name('jsDestroy');
+
+Route::get('/rails', 'App\Http\Controllers\RailsesController@rails')->name('rails');
+Route::post('/rails', 'App\Http\Controllers\RailsesController@railsCreate');
+Route::get('/rails/{id}', 'App\Http\Controllers\RailsesController@show')->name('railsShow');
+Route::get('/rails/{id}/edit', 'App\Http\Controllers\RailsesController@edit')->name('railsEdit');
+Route::post('/rails/{id}', 'App\Http\Controllers\RailsesController@update')->name('railsUpdate');
+Route::delete('/rails/{id}/destroy', 'App\Http\Controllers\RailsesController@destroy')->name('railsDestroy');

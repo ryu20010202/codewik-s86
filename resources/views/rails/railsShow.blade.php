@@ -4,10 +4,10 @@
   <div class="show">
     <div class="show-l">
       <div class="back-page">
-        Java Script の一覧ページへは
+        Railsの一覧ページへは
       </div>
       <div>
-        <a href="/jses" class="back-url">こちらからお願いします</a>
+        <a href="/rails" class="back-url">こちらからお願いします</a>
       </div>
       <div class="other-title">
         その他一覧ページ
@@ -16,8 +16,8 @@
         <ul class="other-url">
           <li class="li-main"><a href="/html" class="language-link">HTML</a></li>
           <li class="li-main"><a href="/cs" class="language-link">CSS</a></li>
+          <li class="li-main"><a href="/jses" class="language-link">JavaScript</a></li>
           <li class="li-main"><a href="/ruby" class="language-link">Ruby</a></li>
-          <li class="li-main"><a href="/rails" class="language-link">Ruby on Rails</a></li>
           <li class="li-main"><a href="/#" class="language-link">PHP</a></li>
           <li class="li-main"><a href="/#" class="language-link">laravel</a></li>
         </ul>
@@ -27,13 +27,13 @@
           <div class="edit-title">
             投稿の編集削除
           </div>
-          <a href="{{ route('jsEdit', ['id' => $item->id]) }}" class="edit-url">編集画面</a>
+          <a href="{{ route('railsEdit', ['id' => $item->id]) }}" class="edit-url">編集画面</a>
         </div>
       @endif
     </div>
     <div class="show-item">
       <div class="code-title">
-        関数
+        要素
       </div>
       <div class="code-show">
         <div class="show-code-item" id="copyTarget">
