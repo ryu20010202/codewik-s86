@@ -35,17 +35,21 @@
     </div>
     <div class="ruby-list">
       Html投稿内容一覧
-      @foreach ($items as $item)
-        <div class="code-items">
-          <div class="code">
-            <p class="code-item" id="copyTarget">{{$item->code}}</p>
-            <a href="/html/{{$item->id}}">詳細画面</a>
+      @if($items == null)
+        投稿が存在しません
+      @else
+        @foreach ($items as $item)
+          <div class="code-items">
+            <div class="code">
+              <p class="code-item" id="copyTarget">{{$item->code}}</p>
+              <a href="/html/{{$item->id}}">詳細画面</a>
+            </div>
+            <div class="how">
+              <p class="how-item">使用方法</p>{{$item->how}}
+            </div>
           </div>
-          <div class="how">
-            <p class="how-item">使用方法</p>{{$item->how}}
-          </div>
-        </div>
-      @endforeach
+        @endforeach
+      @endif
     </div>
   </div>
 @endsection

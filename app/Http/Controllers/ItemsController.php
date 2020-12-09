@@ -21,6 +21,10 @@ class ItemsController extends Controller
     }
 
     public function ruby(){
+        if (Item::select('id')->count() == 0) {
+            $items = null;
+            return view('html', compact('items'));
+        }
         $items = \DB::table('items')->orderBy('id', 'desc')->get();
 
         return view('ruby', compact('items'));
@@ -50,7 +54,7 @@ class ItemsController extends Controller
 
     public function edit(string $id){
         $item = Item::findOrFail($id);
-        
+
         if(Auth::id() == $item->user_id){
             return view('rubyEdit', compact('item'));
         }else{

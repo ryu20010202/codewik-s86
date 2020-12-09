@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Auth;
 class HtmlsController extends Controller
 {
     public function html(){
+        if (Html::select('id')->count() == 0) {
+            $items = null;
+            return view('html', compact('items'));
+        }
         $items = Html::orderBy('id', 'desc')->get();
 
         return view('html', compact('items'));
