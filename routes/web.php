@@ -52,3 +52,10 @@ Route::get('/rails/{id}', 'App\Http\Controllers\RailsesController@show')->name('
 Route::get('/rails/{id}/edit', 'App\Http\Controllers\RailsesController@edit')->name('railsEdit');
 Route::post('/rails/{id}', 'App\Http\Controllers\RailsesController@update')->name('railsUpdate');
 Route::delete('/rails/{id}/destroy', 'App\Http\Controllers\RailsesController@destroy')->name('railsDestroy');
+
+Route::get('/phpes', 'App\Http\Controllers\PhpesController@php')->name('php');
+Route::post('/phpes', 'App\Http\Controllers\PhpesController@phpCreate');
+Route::get('/phpes/{id}', 'App\Http\Controllers\PhpesController@show')->name('phpShow');
+Route::get('/phpes/{id}/edit', 'App\Http\Controllers\PhpesController@edit')->name('phpEdit');
+Route::post('/phpes/{id}', 'App\Http\Controllers\PhpesController@update')->name('phpUpdate');
+Route::delete('/phpes/{id}/destroy', 'App\Http\Controllers\PhpesController@destroy')->name('phpDestroy');

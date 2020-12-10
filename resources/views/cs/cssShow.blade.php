@@ -18,7 +18,7 @@
           <li class="li-main"><a href="/jses" class="language-link">JavaScript</a></li>
           <li class="li-main"><a href="/ruby" class="language-link">Ruby</a></li>
           <li class="li-main"><a href="/rails" class="language-link">Ruby on Rails</a></li>
-          <li class="li-main"><a href="/#" class="language-link">PHP</a></li>
+          <li class="li-main"><a href="/phpes" class="language-link">PHP</a></li>
           <li class="li-main"><a href="/#" class="language-link">laravel</a></li>
         </ul>
       </div>
