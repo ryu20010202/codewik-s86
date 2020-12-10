@@ -19,7 +19,7 @@
           <li class="li-main"><a href="/jses" class="language-link">JavaScript</a></li>
           <li class="li-main"><a href="/rails" class="language-link">Ruby on Rails</a></li>
           <li class="li-main"><a href="/phpes" class="language-link">PHP</a></li>
-          <li class="li-main"><a href="/#" class="language-link">laravel</a></li>
+          <li class="li-main"><a href="/laravels" class="language-link">laravel</a></li>
         </ul>
       </div>
       @if(Auth::id() == $item->user_id)

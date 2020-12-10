@@ -59,3 +59,10 @@ Route::get('/phpes/{id}', 'App\Http\Controllers\PhpesController@show')->name('ph
 Route::get('/phpes/{id}/edit', 'App\Http\Controllers\PhpesController@edit')->name('phpEdit');
 Route::post('/phpes/{id}', 'App\Http\Controllers\PhpesController@update')->name('phpUpdate');
 Route::delete('/phpes/{id}/destroy', 'App\Http\Controllers\PhpesController@destroy')->name('phpDestroy');
+
+Route::get('/laravels', 'App\Http\Controllers\LaravelsController@laravel')->name('laravel');
+Route::post('/laravels', 'App\Http\Controllers\LaravelsController@laravelCreate');
+Route::get('/laravels/{id}', 'App\Http\Controllers\LaravelsController@show')->name('laravelShow');
+Route::get('/laravels/{id}/edit', 'App\Http\Controllers\LaravelsController@edit')->name('laravelEdit');
+Route::post('/laravels/{id}', 'App\Http\Controllers\LaravelsController@update')->name('laravelUpdate');
+Route::delete('/laravels/{id}/destroy', 'App\Http\Controllers\LaravelsController@destroy')->name('laravelDestroy');
