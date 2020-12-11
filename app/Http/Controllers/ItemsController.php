@@ -4,15 +4,60 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Item;
+use App\Models\Html;
+use App\Models\Css;
+use App\Models\Js;
+use App\Models\Rails;
+use App\Models\Php;
+use App\Models\Laravel;
 use Illuminate\Support\Facades\Auth;
 
 class ItemsController extends Controller
 {
     public function index(){
-        $items = array('HTML', 'CSS', 'JavaScript', 'Ruby', 'Ruby on Rails', 'PHP', 'laravel');
-        
-        $count = 0;
-        return view('index', compact('items', 'count'));
+        if (Item::select('id')->count() == 0) {
+            $ruby = null;
+        } else {
+            $ruby = Item::orderBy('id', 'desc')->get();
+        }
+
+        if (Html::select('id')->count() == 0) {
+            $html = null;
+        } else {
+            $html = Html::orderBy('id', 'desc')->get();
+        }
+
+        if (Css::select('id')->count() == 0) {
+            $css = null;
+        } else {
+            $css = Css::orderBy('id', 'desc')->get();
+        }
+
+        if (Js::select('id')->count() == 0) {
+            $js = null;
+        } else {
+            $js = Js::orderBy('id', 'desc')->get();
+        }
+
+        if (Rails::select('id')->count() == 0) {
+            $rails = null;
+        } else {
+            $rails = Rails::orderBy('id', 'desc')->get();
+        }
+
+        if (Php::select('id')->count() == 0) {
+            $php = null;
+        } else {
+            $php = Php::orderBy('id', 'desc')->get();
+        }
+
+        if (Laravel::select('id')->count() == 0) {
+            $laravel = null;
+        } else {
+            $laravel = Laravel::orderBy('id', 'desc')->get();
+        }
+
+        return view('index', compact('html', 'css', 'js', 'ruby', 'rails', 'php', 'laravel'));
     }
 
     public function getLogout(){
